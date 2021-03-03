@@ -1,0 +1,27 @@
+car = {
+"brand" : "Ford",
+"model" : "Mustang",
+"year" : 2018
+}
+if "model" in car:
+  print("Yes, 'model' is one of the keys in the thisdict dictionary")
+  if "electric" in car:
+    print("Yes, 'electric'is one of the keys in the thisdict dictionary")
+    
+  car["year"] = 2018
+  car["color"] = ("red", "Black", "Yellow", "Blue")
+  car["brand"] = ("Ford", "Dodge", "Ram")
+  print(car) 
+  car.pop("model")
+  car.popitem()
+  del car["model"]
+  car.clear()
+  print(car)
+  for x in car:
+    print(x)
+  for x in car.values():
+    print(x)
+  for x in car.keys():
+    print(x)
+  for x, y in car.items():
+    print(x, y)
